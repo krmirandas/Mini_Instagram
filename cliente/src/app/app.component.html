@@ -1,0 +1,45 @@
+<div  *ngIf="identity" class="navigation col-lg-1">
+  <h1>
+    {{title}}
+  </h1>
+</div>
+
+<div *ngIf="identity" class="central col-lg-1">
+  <h1>
+    {{title}}
+  </h1>
+</div>
+
+
+<div class="container">
+
+<div class="row" *ngIf="!identity">
+  <div class="col-md-6">
+
+  </div>
+  <div class="col-md-6">
+    <h1>
+      Registrate
+    </h1> 
+    <form>
+    <div class="form-group row">
+      <div class="col-xs-2">
+        <input type="text" class="form-control" placeholder="Número de celular o correo electrónico">
+      </div>
+    </div>
+      <div class="form-group row">
+      <div class="col-xs-3">
+        <input class="form-control" id="ex2" type="text">
+      </div>
+      </div>
+      <div class="form-group row">
+      <div class="col-xs-4"> 
+        <input class="form-control" id="ex3" type="text">
+      </div>
+    </div>
+  </form>
+    </div>
+</div>
+
+</div>
+
