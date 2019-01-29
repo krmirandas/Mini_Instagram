@@ -4,6 +4,10 @@
   </h1>
 </div>
 
+
+<div class="clearfix"></div>
+
+
 <div *ngIf="identity" class="central col-lg-1">
   <h1>
     {{title}}
@@ -11,35 +15,91 @@
 </div>
 
 
-<div class="container">
+<div class="row forms" *ngIf="!identity">
 
-<div class="row" *ngIf="!identity">
-  <div class="col-md-6">
+  <div class="col-lg-5 square">
+    <div class="h1-square">
+      <h1>Iniciar sesión</h1>
+    </div>
+    <div class="square-form">
+    <form #loginForm="ngForm">
+    <div class="form-group row">
+      <div class="col-xs-2">
+        <input type="text" class="form-control" placeholder="Teléfono, usuario o correo electronico">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-xs-2"> 
+        <input type="text" class="form-control" placeholder="Contraseña">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-xs-12 sub">
+        <input type="submit" value="Entrar" class="btn btn-primary button-reg">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="<col-md-12">
+        <a href='../../../api/config.js'class=" icon-facebook-square"> Iniciar sesión con Facebook</a>
+      </div>
+    </div>
+    </form>
+    
+
+    
+    </div>
 
   </div>
-  <div class="col-md-6">
-    <h1>
-      Registrate
-    </h1> 
-    <form>
+
+<!-- PARTE IZQUIERA -->
+  <div class="col-lg-5 square">
+    <div class="h1-square">
+      <h1>Registrate</h1>
+    </div>
+    <div class="square-form">
+      <form>
+    <div class="form-group row">
+      <div class="<col-md-12">
+        <a href='../../../api/config.js'><button  type="button" class="btn btn-primary icon-facebook-square"> Iniciar sesión con Facebook</button></a>
+      </div>
+    </div>
+       <hr width="100%" size=20/>
     <div class="form-group row">
       <div class="col-xs-2">
         <input type="text" class="form-control" placeholder="Número de celular o correo electrónico">
       </div>
     </div>
-      <div class="form-group row">
-      <div class="col-xs-3">
-        <input class="form-control" id="ex2" type="text">
-      </div>
-      </div>
-      <div class="form-group row">
-      <div class="col-xs-4"> 
-        <input class="form-control" id="ex3" type="text">
+    <div class="form-group row">
+      <div class="col-xs-2">
+        <input type="text" class="form-control" placeholder="Nombre completo">
       </div>
     </div>
-  </form>
+    <div class="form-group row">
+      <div class="col-xs-2"> 
+        <input type="text" class="form-control" placeholder="Nombre de usuario">
+        </div>
     </div>
-</div>
+    <div class="form-group row">
+      <div class="col-xs-2"> 
+        <input type="text" class="form-control" placeholder="Contraseña">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-xs-12 sub">
+        <input type="submit" value="Registrate" class="btn btn-primary button-reg">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-xs-4 rew">
+        <p class="p-reg">Al registrarte, aceptas nuestras <a style="color:blue">Condiciones</a>, la <a style="color:blue">Política de datos</a> y la <a style="color:blue">Política de cookies</a>.</p>
+      </div>
+    </div>
+    </form>
+    
+
+    
+    </div>
+<!-- PARTE IZQUIERA -->
 
 </div>
 

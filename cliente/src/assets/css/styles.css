@@ -1,18 +1,95 @@
 body{
-    background: #212F3D  
+    background:whitesmoke;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 input {
-    width: 400px;
-    padding: 0 20px;
+    width: 5em;
+    padding: 0 0.2em;
 }
 
 input,
 input::-webkit-input-placeholder {
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 5;
 }
 
 h1{
-    color: white;
+    color: black;
+    font-family: 'Playfair Display SC', serif;
+
+}
+
+.forms{
+    display: inline-block;
+    height: 100%;
+    margin-top: 5em;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    text-align: center
+    
+}
+
+.square{
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.square-form{
+    display: flex;
+    justify-content: center;
+    margin: 4em auto;
+    text-align: center;
+}   
+
+.h1-square{
+    width: 100%;
+     margin: 3em auto;
+}
+
+.o{
+    text-align: center;
+}
+
+.sub{
+    width: 15em;
+    margin: 0px auto;
+}
+
+.button-reg{
+  padding: 0.1em 1em;
+  text-align: center;
+  width: 100%;
+  
+}
+
+.rew{
+     margin: 0px auto;
+}
+
+.p-reg {
+    font-size: 12px;
+    text-align: center;
+    padding: 1em;
+    width: 20em;
+}
+
+.p-reg a{
+    cursor: pointer;
+}
+
+.cuenta{
+     margin: 0px auto;
+     text-align: center;
+     
+}
+
+.p-cuenta{
+    padding: 1em;
+    font-size: 13px;
+    width: 15em;
+    
+    
 }
